@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
+</head>
+
+    <body >
+        <header class="clgname">
+            <div>            <h1 class="clgname"> 
+                <u>BHARATHIDASAN ENGINEERING COLLEGE</u> 
+            </h1>
+        </div>
+            <div>
+                <h2>
+                    STUDENT INFORMATION SYSTEM
+                </h2>
+            </div>
+            <div>
+                <img class="bec_logo" src='/images/bec.jpeg'>
+            </div>
+
+
+        </header>
+        <div class="container">
+            <h2 class="logiin">LOGIN</h2>
+            <button onclick="showStudentLogin()">Student Login</button>
+            <button onclick="showStaffLogin()">Staff Login</button>
+    
+            <!-- Student Login Section -->
+            <div class="login">
+                <div id="studentLogin" style="display: none;">
+                    <h2 style="font-size: 30px;
+                    margin-left:25%
+                    ">Student Login</h2>
+                    <form id="studentLoginForm" onsubmit="return studentLogin()">
+                        <input type="text" id="studentUsername" placeholder="Username" required>
+                        <input type="password" id="studentPassword" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+        
+                <!-- Staff Login Section -->
+                <div id="staffLogin" style="display: none;">
+                    <h2 style="font-size: 30px;
+                    margin-left:25%
+                    ">Staff Login</h2>
+                    <form id="staffLoginForm" onsubmit="return staffLogin()">
+                        <input type="text" id="staffUsername" placeholder="Username" required>
+                        <input type="password" id="staffPassword" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+
+    
+            <!-- Student Information Display Section -->
+            <div id="studentInfo" style="display: none;">
+                <div class="image-container" id="studentImageContainer">
+                    <img id="studentImage" class="user-image" src="" alt="Student Image">
+                </div>
+                <h2>STUDENT INFORMATION</h2>
+                <p><strong>Name:</strong> <span id="studentName"></span></p>
+                <p><strong>Register Number:</strong> <span id="registerNumber"></span></p>
+                <p><strong>Blood Group:</strong> <span id="bloodGroup"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+                <p><strong>Age:</strong> <span id="age"></span></p>
+                <p><strong>Address:</strong> <span id="address"></span></p>
+                <p><strong>Degree:</strong> <span id="degree"></span></p>
+                <p><strong>Branch:</strong> <span id="branch"></span></p>
+            <p><strong>Email Address:</strong> <span id="emailAddress"></span></p>
+                <p><strong>Phone Number:</strong> <span id="phoneNumber"></span></p>
+                <p><strong>Pin Code:</strong> <span id="pinCode"></span></p>
+            </div>
+        </div>
+    </body>
+</html>
